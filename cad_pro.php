@@ -16,9 +16,8 @@
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
 	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.quicksearch/2.3.1/jquery.quicksearch.js"></script>
     <link rel="icon" href="./favicon.ico" type="image/x-icon"/>
-    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
-    <!-- Generated: 2018-04-06 16:27:42 +0200 -->
-    <title>Store components - tabler.github.io - a responsive, flat and full featured admin template</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo2.png" />
+    <title>Combination</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext">
     <script src="./assets/js/require.min.js"></script>
@@ -50,6 +49,17 @@
     <script src="./assets/plugins/maps-google/plugin.js"></script>
     <!-- Input Mask Plugin -->
     <script src="assets/plugins/input-mask/plugin.js"></script>
+	   <script src="https://www.geradordecep.com.br/assets/js/jquery-1.2.6.pack.js"></script>
+    <script src="https://www.geradordecep.com.br/assets/js/jquery.maskedinput-1.1.4.pack.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#preco").mask("R$99,99");
+		});
+		
+		$(document).ready(function(){
+			$("#porc").mask("99%");
+		});
+	</script>
   </head>
   <body class="">
     <div class="page">
@@ -384,21 +394,7 @@
 		</div>
       </div>
       <div class="modal-footer">
-		  <div id="nome">
-		<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-        <input type="submit" class="btn btn-success" value="Adicionar">
-		 </div>
-			<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-			<script type="text/javascript">
-			$(function(){ // declaro o início do jquery
-			  $("input[name='nome']").on('blur', function(){
-				  var nome = $(this).val();
-				  $.get('class/val_pro.php?nome=' + nome, function(data){
-					$('#nome').html(data);
-				  });
-				});
-			});// fim do jquery
-			</script>
+		   <input type="submit" class="btn btn-success" value="Adicionar">
       </div>
 	</form>
     </div>

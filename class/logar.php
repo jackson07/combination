@@ -22,7 +22,7 @@ if(mysqli_num_rows($result) > 0) {
      $_SESSION['login'] = $fetch['login'];      
     } 	
    echo "<script type='text/javascript'>"
-    . "location.href='../cad_ins.php'; </script>";
+    . "location.href='../cad_pro.php'; </script>";
  } else {
     unset($_SESSION['login']);
     echo "<script type='text/javascript'>"

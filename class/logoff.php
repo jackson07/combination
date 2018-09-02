@@ -6,5 +6,5 @@ session_destroy();
 
 
 echo "<script type='text/javascript'>"
-        ."location.href='../../index.html';"
+        ."location.href='../index.html';"
         ."</script>";
