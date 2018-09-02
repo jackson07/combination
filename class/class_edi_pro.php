@@ -5,8 +5,8 @@ include 'conection.php';
 //dados
 $id = filter_input(INPUT_POST,'id');
 $nome = filter_input(INPUT_POST,'nome');
-$Varejo = filter_input(INPUT_POST,'Varejo');
-$revendedor = filter_input(INPUT_POST,'revendedor');
+$varejo = filter_input(INPUT_POST,'varejo');
+$revendedor2 = filter_input(INPUT_POST,'revendedor');
 $detalhes = filter_input(INPUT_POST,'detalhes');
 
 
@@ -85,7 +85,7 @@ if(isset($_POST['GG'])){
 
 $tamanhos = "$P $M $G $GG";
 
-$query = "UPDATE produto SET nome = '$nome', val_var = '$Varejo', val_rev = '$revendedor', detalhes = '$detalhes' ,categorias = '$categorias', sexo = '$sexo', tamanho  = '$tamanhos' where id = '$id' ";
+$query = "UPDATE produto SET nome = '$nome', val_var = '$varejo', val_rev = '$revendedor2', detalhes = '$detalhes' ,categorias = '$categorias', sexo = '$sexo', tamanho  = '$tamanhos' where id = '$id' ";
 if (mysqli_query($link, $query)) {
     echo "<script type='text/javascript'>"
     . "location.href='../edi_pro.php?nome=$nome'; </script>";
