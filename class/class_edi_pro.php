@@ -69,8 +69,6 @@ if(isset($_POST['P'])){
 }
 if(isset($_POST['M'])){
  $M = "M;";
-}else{
- $M = "";	
 }
 if(isset($_POST['G'])){
  $G = "G;";

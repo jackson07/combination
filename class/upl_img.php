@@ -32,11 +32,7 @@ if (isset($_FILES['estampa'])) {
       } else {
         $msgError = $handle->error;
         $sucesso = false;
-      }		 
-   }	
-}
-
-}
+      }		  }	} }
 
 
 if ($validacao == "ok"){

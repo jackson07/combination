@@ -106,12 +106,7 @@ if (substr_count($sexo, 'Feminino') > 0) {
     <script src="./assets/js/require.min.js"></script>
 	  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 	  
-    <script>
-      requirejs.config({
-          baseUrl: '.'
-      });
-    </script>
-    <!-- Dashboard Core -->
+       <!-- Dashboard Core -->
     <link href="./assets/css/dashboard.css" rel="stylesheet" />
     <script src="./assets/js/dashboard.js"></script>
     <!-- c3.js Charts Plugin -->

@@ -25,10 +25,7 @@
       requirejs.config({
           baseUrl: '.'
       });
-    </script>
-    <!-- Dashboard Core -->
-    <link href="./assets/css/dashboard.css" rel="stylesheet" />
-    <script src="./assets/js/dashboard.js"></script>
+    </script>   
     <!-- c3.js Charts Plugin -->
     <link href="./assets/plugins/charts-c3/plugin.css" rel="stylesheet" />
     <script src="./assets/plugins/charts-c3/plugin.js"></script>

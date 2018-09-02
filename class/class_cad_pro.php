@@ -22,8 +22,6 @@ $categorias = "$Calcinha $Sutia $Body $Cueca $Pijama";
 // sexo
 if(isset($_POST['Mascolino'])){
  $Mascolino = "Mascolino;";
-}else{
- $Mascolino = "";	
 }
 
 $tamanhos = "$P $M $G $GG";

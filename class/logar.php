@@ -18,9 +18,7 @@ if(mysqli_num_rows($result) > 0) {
     $_SESSION['login'] = $usuario;
     $query = "SELECT * FROM acesso WHERE login = '$usuario' and password = '$senha'";
     $result = mysqli_query($link, $query);    
-    while ($fetch = $result->fetch_assoc()) {
-     $_SESSION['login'] = $fetch['login'];      
-    } 	
+    	
    echo "<script type='text/javascript'>"
     . "location.href='../cad_pro.php'; </script>";
  } else {

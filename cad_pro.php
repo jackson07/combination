@@ -25,12 +25,8 @@
     <!-- Dashboard Core -->
     <link href="./assets/css/dashboard.css" rel="stylesheet" />
     <script src="./assets/js/dashboard.js"></script>
-    <!-- c3.js Charts Plugin -->
-    
-		$(document).ready(function(){
-			$("#preco").mask("R$99,99");
-		});
-		
+    <!-- c3.js Charts Plugin -->    
+				
 		$(document).ready(function(){
 			$("#porc").mask("99%");
 		});
