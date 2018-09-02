@@ -3,23 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta http-equiv="Content-Language" content="en" />
-    <meta name="msapplication-TileColor" content="#2d89ef">
-    <meta name="theme-color" content="#4188c9">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
-	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
-	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.quicksearch/2.3.1/jquery.quicksearch.js"></script>
-    <link rel="icon" href="./favicon.ico" type="image/x-icon"/>
-    <link rel="shortcut icon" type="image/x-icon" href="img/logo2.png" />
-    <title>Combination</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext">
+    
     <script src="./assets/js/require.min.js"></script>
 	  
     <script>
@@ -42,16 +26,7 @@
     <link href="./assets/css/dashboard.css" rel="stylesheet" />
     <script src="./assets/js/dashboard.js"></script>
     <!-- c3.js Charts Plugin -->
-    <link href="./assets/plugins/charts-c3/plugin.css" rel="stylesheet" />
-    <script src="./assets/plugins/charts-c3/plugin.js"></script>
-    <!-- Google Maps Plugin -->
-    <link href="./assets/plugins/maps-google/plugin.css" rel="stylesheet" />
-    <script src="./assets/plugins/maps-google/plugin.js"></script>
-    <!-- Input Mask Plugin -->
-    <script src="assets/plugins/input-mask/plugin.js"></script>
-	   <script src="https://www.geradordecep.com.br/assets/js/jquery-1.2.6.pack.js"></script>
-    <script src="https://www.geradordecep.com.br/assets/js/jquery.maskedinput-1.1.4.pack.js"></script>
-	<script type="text/javascript">
+    
 		$(document).ready(function(){
 			$("#preco").mask("R$99,99");
 		});
@@ -93,23 +68,7 @@
                           <label class="selectgroup-item">
                             <input type="checkbox" name="Calcinha" value="Calcinha" class="selectgroup-input" >
                             <span class="selectgroup-button">Calcinha</span>
-                          </label>
-                          <label class="selectgroup-item">
-                            <input type="checkbox" name="Sutia" value="Sutia" class="selectgroup-input">
-                            <span class="selectgroup-button">Sutiã</span>
-                          </label>
-                          <label class="selectgroup-item">
-                            <input type="checkbox" name="Body" value="Body" class="selectgroup-input">
-                            <span class="selectgroup-button">Body</span>
-                          </label>
-                          <label class="selectgroup-item">
-                            <input type="checkbox" name="Cueca" value="Cueca" class="selectgroup-input">
-                            <span class="selectgroup-button">Cueca</span>
-                          </label>
-                          <label class="selectgroup-item">
-                            <input type="checkbox" name="Pijama" value="Pijama" class="selectgroup-input">
-                            <span class="selectgroup-button">Pijama</span>
-                          </label>                          
+                          </label>                                
                         </div>
                       </div>
         			<div class="form-group">
@@ -119,11 +78,7 @@
                             <input type="checkbox" name="Feminino" value="Feminino" class="selectgroup-input" >
                             <span class="selectgroup-button"><i class="fa fa-female"></i> Feminino</span>
                           </label>
-                          <label class="selectgroup-item">
-                            <input type="checkbox" name="Mascolino" value="Mascolino" class="selectgroup-input">
-                            <span class="selectgroup-button"><i class="fa fa-male"></i> Mascolino</span>
-                          </label>
-                        </div>
+                                                </div>
                       </div>
 			  <div class="form-group">
                         <label class="form-label">Tamanhos disponíveis</label>
@@ -135,15 +90,7 @@
                           <label class="selectgroup-item">
                             <input type="checkbox" name="M"  class="selectgroup-input">
                             <span class="selectgroup-button">M</span>
-                          </label>
-							<label class="selectgroup-item">
-                            <input type="checkbox" name="G"  class="selectgroup-input" >
-                            <span class="selectgroup-button">G</span>
-                          </label>
-                          <label class="selectgroup-item">
-                            <input type="checkbox" name="GG"  class="selectgroup-input">
-                            <span class="selectgroup-button">GG</span>
-                          </label>
+                          </label>							
                         </div>
                       </div>		 			 					
                       </div>
@@ -174,70 +121,8 @@
 						 $Sutia = "and categorias like '%Sutia%' ";
 						}else{
 						 $Sutia = "";	
-						}
-
-						if(isset($_POST['Body'])){
-						 $Body = "and categorias like '%Body%' ";
-						}else{
-						 $Body = "";	
-						}
-
-						if(isset($_POST['Cueca'])){
-						 $Cueca = "and categorias like '%Cueca%' ";
-						}else{
-						 $Cueca = "";	
-						}
-
-						if(isset($_POST['Pijama'])){
-						 $Pijama = "and categorias like '%Pijama%' ";
-						}else{
-						 $Pijama = "";	
-						}
-
-						$categorias = "$Calcinha $Sutia $Body $Cueca $Pijama";
-
-
-						// sexo
-						if(isset($_POST['Mascolino'])){
-						 $Mascolino = " and sexo like '%Mascolino%' ";
-						}else{
-						 $Mascolino = "";	
-						}
-
-						if(isset($_POST['Feminino'])){
-						 $Feminino = " and sexo like '%Feminino%' ";
-						}else{
-						 $Feminino = "";	
-						}
-
-						$sexo = "$Feminino $Mascolino";
-
-
-						// tamanhos 
-
-						if(isset($_POST['P'])){
-						 $P = " and tamanho like '%P%' ";
-						}else{
-						 $P = "";	
-						}
-						if(isset($_POST['M'])){
-						 $M = " and tamanho like '%M%' ";
-						}else{
-						 $M = "";	
-						}
-						if(isset($_POST['G'])){
-						 $G = " and tamanho like '%G%' ";
-						}else{
-						 $G = "";	
-						}
-						if(isset($_POST['GG'])){
-						 $GG = " and tamanho like '%GG%' ";
-						}else{
-						 $GG = "";	
-						}
-
-						$tamanhos = "$P $M $G $GG";
-	
+						}		
+							
 	
 					    $query = "SELECT * from produto where id > 0 $sexo $tamanhos $categorias";
 						$result = $link->query($query);
@@ -318,23 +203,7 @@
                           <label class="selectgroup-item">
                             <input type="checkbox" name="Calcinha" value="Calcinha" class="selectgroup-input" >
                             <span class="selectgroup-button">Calcinha</span>
-                          </label>
-                          <label class="selectgroup-item">
-                            <input type="checkbox" name="Sutia" value="Sutia" class="selectgroup-input">
-                            <span class="selectgroup-button">Sutiã</span>
-                          </label>
-                          <label class="selectgroup-item">
-                            <input type="checkbox" name="Body" value="Body" class="selectgroup-input">
-                            <span class="selectgroup-button">Body</span>
-                          </label>
-                          <label class="selectgroup-item">
-                            <input type="checkbox" name="Cueca" value="Cueca" class="selectgroup-input">
-                            <span class="selectgroup-button">Cueca</span>
-                          </label>
-                          <label class="selectgroup-item">
-                            <input type="checkbox" name="Pijama" value="Pijama" class="selectgroup-input">
-                            <span class="selectgroup-button">Pijama</span>
-                          </label>                          
+                          </label>                                         
                         </div>
                       </div>
         			<div class="form-group">
@@ -356,19 +225,7 @@
 							<label class="selectgroup-item">
                             <input type="checkbox" name="P"  class="selectgroup-input" >
                             <span class="selectgroup-button">P</span>
-                          </label>
-                          <label class="selectgroup-item">
-                            <input type="checkbox" name="M"  class="selectgroup-input">
-                            <span class="selectgroup-button">M</span>
-                          </label>
-							<label class="selectgroup-item">
-                            <input type="checkbox" name="G"  class="selectgroup-input" >
-                            <span class="selectgroup-button">G</span>
-                          </label>
-                          <label class="selectgroup-item">
-                            <input type="checkbox" name="GG"  class="selectgroup-input">
-                            <span class="selectgroup-button">GG</span>
-                          </label>
+                          </label>                          
                         </div>
                       </div>
 		 			 </div>

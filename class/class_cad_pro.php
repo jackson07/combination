@@ -16,30 +16,6 @@ if(isset($_POST['Calcinha'])){
  $Calcinha = "";	
 }
 
-if(isset($_POST['Sutia'])){
- $Sutia = "Sutia;";
-}else{
- $Sutia = "";	
-}
-
-if(isset($_POST['Body'])){
- $Body = "Body;";
-}else{
- $Body = "";	
-}
-
-if(isset($_POST['Cueca'])){
- $Cueca = "Cueca;";
-}else{
- $Cueca = "";	
-}
-
-if(isset($_POST['Pijama'])){
- $Pijama = "Pijama;";
-}else{
- $Pijama = "";	
-}
-
 $categorias = "$Calcinha $Sutia $Body $Cueca $Pijama";
 
 
@@ -48,38 +24,6 @@ if(isset($_POST['Mascolino'])){
  $Mascolino = "Mascolino;";
 }else{
  $Mascolino = "";	
-}
-
-if(isset($_POST['Feminino'])){
- $Feminino = "Feminino;";
-}else{
- $Feminino = "";	
-}
-
-$sexo = "$Feminino $Mascolino";
-
-
-// tamanhos 
-
-if(isset($_POST['P'])){
- $P = "P;";
-}else{
- $P = "";	
-}
-if(isset($_POST['M'])){
- $Mascolino = "M;";
-}else{
- $M = "";	
-}
-if(isset($_POST['G'])){
- $G = "G;";
-}else{
- $G = "";	
-}
-if(isset($_POST['GG'])){
- $GG = "GG;";
-}else{
- $GG = "";	
 }
 
 $tamanhos = "$P $M $G $GG";
